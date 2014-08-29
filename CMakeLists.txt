@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( ImageBlender )
+find_package ( OpenCV REQUIRED )
+add_executable ( ImageBlender main.cpp )
+target_link_libraries ( ImageBlender ${OpenCV_LIBS} )
